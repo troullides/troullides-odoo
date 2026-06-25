@@ -1,3 +1,22 @@
-body {
-    outline: 6px solid #174f9a !important;
+:root {
+  --tr-blue: #174f9a;
+  --tr-navy: #102033;
+  --tr-gold: #b89b5e;
+  --tr-light: #f5f7fa;
+}
+
+.btn-primary {
+  background-color: var(--tr-blue) !important;
+  border-color: var(--tr-blue) !important;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: var(--tr-navy) !important;
+  border-color: var(--tr-navy) !important;
+}
+
+.tr-section-title {
+  color: var(--tr-navy);
+  font-weight: 700;
 }
