@@ -1,0 +1,57 @@
+<odoo>
+    <template id="homepage_troullides" name="Troullides Homepage" page="True">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+
+                <section class="tr-hero">
+                    <div class="container">
+                        <div class="tr-hero-content">
+                            <h1>Troullides Group</h1>
+                            <p class="tr-subtitle">
+                                Hospitality Supplies • Holiday Villas • Car Rentals • Airport Transfers
+                            </p>
+                            <p>
+                                Your trusted partner in Cyprus for hospitality solutions, travel services and premium customer care.
+                            </p>
+                            <a href="/shop" class="btn btn-primary me-2">Explore Services</a>
+                            <a href="/contactus" class="btn btn-outline-primary">Contact Us</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section">
+                    <div class="container">
+                        <h2 class="tr-section-title text-center mb-5">Our Services</h2>
+                        <div class="row g-4">
+                            <div class="col-md-3">
+                                <div class="tr-card">
+                                    <h3>Hospitality Supplies</h3>
+                                    <p>Products and equipment for hotels, restaurants and professional hospitality businesses.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="tr-card">
+                                    <h3>Holiday Villas</h3>
+                                    <p>Comfortable stays and holiday accommodation across Cyprus.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="tr-card">
+                                    <h3>Car Rentals</h3>
+                                    <p>Reliable car rental solutions for visitors, families and business travellers.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="tr-card">
+                                    <h3>Airport Transfers</h3>
+                                    <p>Private transfers from Larnaca and Paphos airports with professional service.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+</odoo>
