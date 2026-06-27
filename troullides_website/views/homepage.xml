@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="troullides_homepage" model="website.page">
+        <field name="name">Home</field>
+        <field name="url">/</field>
+        <field name="is_published">True</field>
+        <field name="key">troullides_website.troullides_homepage</field>
+        <field name="arch" type="xml">
+            <t t-call="website.layout">
+                <div id="wrap">
+
+                    <section class="tr-hero">
+                        <div class="tr-hero-overlay">
+                            <img src="/theme_troullides/static/src/img/logo.png" class="tr-hero-logo"/>
+                            <h1>Quality Furniture for Every Home &amp; Business</h1>
+                            <p>Bedroom • Bathroom • Desk • Housekeeping • Wardrobes • Televisions</p>
+                            <div class="tr-hero-buttons">
+                                <a href="/shop" class="btn btn-primary btn-lg">Browse Products</a>
+                                <a href="/contactus" class="btn btn-outline-light btn-lg">Contact Us</a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </field>
+    </record>
+
+</odoo>
