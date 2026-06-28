@@ -1,19 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
     <template id="troullides_homepage" name="Troullides Homepage">
         <t t-call="website.layout">
+
             <div id="wrap">
+
+                <!-- HERO -->
                 <section class="tr-hero">
                     <div class="tr-hero-overlay">
-                        <h1>Quality Furniture for Every Home &amp; Business</h1>
-                        <p>Bedroom • Bathroom • Desk • Housekeeping • Wardrobes • Televisions</p>
+
+                        <h1>
+                            Quality Furniture for Every Home &amp; Business
+                        </h1>
+
+                        <p>
+                            Bedroom • Bathroom • Desk • Housekeeping • Wardrobes • Televisions
+                        </p>
+
                         <div class="tr-hero-buttons">
-                            <a href="/shop" class="btn btn-tr-primary">Browse Products</a>
-                            <a href="/contactus" class="btn btn-tr-secondary">Contact Us</a>
+                            <a href="/shop" class="btn btn-tr-primary">
+                                Browse Products
+                            </a>
+
+                            <a href="/contactus" class="btn btn-tr-secondary">
+                                Contact Us
+                            </a>
                         </div>
+
                     </div>
                 </section>
+
+
+                <!-- CATEGORIES -->
+
+                <section class="container py-5">
+
+                    <div class="text-center mb-5">
+                        <h2>Shop by Category</h2>
+                        <p class="text-muted">
+                            Discover our complete furniture collection.
+                        </p>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="/shop/category/bedroom-1" class="text-decoration-none">
+                                <div class="card shadow-sm h-100 text-center">
+                                    <div class="card-body">
+                                        <h4>Bedroom</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="/shop/category/bathroom-1" class="text-decoration-none">
+                                <div class="card shadow-sm h-100 text-center">
+                                    <div class="card-body">
+                                        <h4>Bathroom</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="/shop/category/office-1" class="text-decoration-none">
+                                <div class="card shadow-sm h-100 text-center">
+                                    <div class="card-body">
+                                        <h4>Office</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="/shop" class="text-decoration-none">
+                                <div class="card shadow-sm h-100 text-center">
+                                    <div class="card-body">
+                                        <h4>View All</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- WHY US -->
+
+                <section class="container py-5">
+
+                    <div class="row text-center">
+
+                        <div class="col-md-4">
+
+                            <h3>Premium Quality</h3>
+
+                            <p>
+                                Carefully selected products for hotels,
+                                restaurants and homes.
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <h3>Fast Delivery</h3>
+
+                            <p>
+                                Fast delivery throughout Cyprus.
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <h3>Professional Service</h3>
+
+                            <p>
+                                More than 30 years serving hospitality
+                                and retail customers.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- CTA -->
+
+                <section class="py-5 text-center bg-light">
+
+                    <div class="container">
+
+                        <h2>Ready to Furnish Your Business?</h2>
+
+                        <p class="lead">
+                            Browse thousands of products or contact our team today.
+                        </p>
+
+                        <a href="/shop" class="btn btn-tr-primary btn-lg me-3">
+                            Browse Products
+                        </a>
+
+                        <a href="/contactus" class="btn btn-outline-dark btn-lg">
+                            Contact Us
+                        </a>
+
+                    </div>
+
+                </section>
+
             </div>
+
         </t>
     </template>
+
 </odoo>
