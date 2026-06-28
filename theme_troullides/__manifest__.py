@@ -7,7 +7,7 @@
     "website": "https://troullides.net",
     "license": "LGPL-3",
     "depends": ["website", "website_sale"],
-    "data": ["views/homepage.xml"],
+    "data": [],
     "assets": {
         "web.assets_frontend": [
             "theme_troullides/static/src/css/troullides.css"
