@@ -1,18 +1,15 @@
-/* ==========================
-   TROULLIDES BRAND
-========================== */
-
 :root {
     --tr-blue: #0055A4;
     --tr-blue-dark: #003f7d;
     --tr-navy: #1A2433;
     --tr-light: #F7F8FA;
     --tr-white: #FFFFFF;
+    --tr-muted: #6b7280;
 }
 
-/* ==========================
-   HEADER
-========================== */
+body {
+    background: #fff;
+}
 
 #top {
     background: #ffffff !important;
@@ -58,15 +55,11 @@
     border-color: var(--tr-blue-dark) !important;
 }
 
-/* ==========================
-   HERO
-========================== */
-
 .tr-hero {
     position: relative;
-    height: 700px;
+    min-height: 720px;
     background:
-        linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+        linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
         url("/theme_troullides/static/src/img/hero.jpg");
     background-size: cover;
     background-position: center 30%;
@@ -74,26 +67,16 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
 }
 
 .tr-hero-overlay {
-    position: relative;
-    z-index: 2;
     max-width: 900px;
-    margin: 0 auto;
     padding: 40px 24px;
     color: white;
 }
 
-.tr-hero-logo {
-    max-width: 380px;
-    width: 70%;
-    margin-bottom: 28px;
-}
-
 .tr-hero h1 {
-    font-size: clamp(2.8rem, 4vw, 4.2rem);
+    font-size: clamp(2.8rem, 4.4vw, 4.8rem);
     font-weight: 800;
     line-height: 1.08;
     margin-bottom: 20px;
@@ -104,15 +87,21 @@
     font-size: 1.35rem;
     margin-bottom: 34px;
     color: white;
-    opacity: 0.95;
+    opacity: 0.96;
 }
 
 .tr-hero-buttons .btn {
     margin: 8px;
+}
+
+.btn-tr-primary,
+.btn-tr-secondary,
+.btn-tr-secondary-dark {
     padding: 14px 34px;
     border-radius: 10px;
     font-weight: 700;
     transition: all 0.25s ease;
+    text-decoration: none !important;
 }
 
 .btn-tr-primary {
@@ -138,21 +127,174 @@
     color: var(--tr-blue) !important;
 }
 
-/* ==========================
-   GENERAL PAGE
-========================== */
-
-body {
-    background-color: var(--tr-light);
+.btn-tr-secondary-dark {
+    background: transparent;
+    color: var(--tr-blue) !important;
+    border: 2px solid var(--tr-blue);
+    margin-left: 10px;
 }
 
-#wrap {
-    background-color: #fff;
+.btn-tr-secondary-dark:hover {
+    background: var(--tr-blue);
+    color: white !important;
 }
 
-/* ==========================
-   MOBILE
-========================== */
+.tr-section {
+    padding: 90px 0;
+    background: white;
+}
+
+.tr-light {
+    background: var(--tr-light);
+}
+
+.tr-section-heading {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.tr-section-heading span {
+    color: var(--tr-blue);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+.tr-section-heading h2 {
+    color: var(--tr-navy);
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+.tr-category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.tr-category-card {
+    min-height: 260px;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 28px;
+    text-decoration: none !important;
+    background:
+        linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.68)),
+        url("/theme_troullides/static/src/img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 14px 34px rgba(0,0,0,.14);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.tr-category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(0,0,0,.22);
+}
+
+.tr-category-card h3 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.tr-category-card p {
+    color: white;
+    margin: 0;
+    opacity: .92;
+}
+
+.tr-benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.tr-benefit {
+    background: white;
+    padding: 36px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.tr-benefit h3 {
+    color: var(--tr-navy);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.tr-benefit p {
+    color: var(--tr-muted);
+    margin: 0;
+}
+
+.tr-featured {
+    padding: 100px 0;
+    background: var(--tr-navy);
+    color: white;
+    text-align: center;
+}
+
+.tr-featured h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.tr-featured p {
+    max-width: 700px;
+    margin: 0 auto 32px;
+    font-size: 1.2rem;
+    opacity: .9;
+}
+
+.tr-contact-banner {
+    padding: 90px 0;
+    background: white;
+    text-align: center;
+}
+
+.tr-contact-banner h2 {
+    color: var(--tr-navy);
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.tr-contact-banner p {
+    color: var(--tr-muted);
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+}
+
+footer,
+#footer {
+    background: var(--tr-navy) !important;
+    color: white !important;
+}
+
+footer a,
+#footer a {
+    color: white !important;
+}
+
+@media (max-width: 992px) {
+    .tr-category-grid,
+    .tr-benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tr-hero {
+        min-height: 620px;
+    }
+}
 
 @media (max-width: 768px) {
     #top .navbar {
@@ -164,12 +306,8 @@ body {
     }
 
     .tr-hero {
-        height: 620px;
+        min-height: 600px;
         background-position: center center;
-    }
-
-    .tr-hero-logo {
-        max-width: 280px;
     }
 
     .tr-hero h1 {
@@ -180,10 +318,22 @@ body {
         font-size: 1.05rem;
     }
 
-    .tr-hero-buttons .btn {
+    .tr-hero-buttons .btn,
+    .btn-tr-primary,
+    .btn-tr-secondary,
+    .btn-tr-secondary-dark {
         display: block;
         width: 100%;
         max-width: 280px;
         margin: 10px auto;
+    }
+
+    .tr-category-grid,
+    .tr-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .tr-section {
+        padding: 60px 0;
     }
 }
