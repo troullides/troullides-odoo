@@ -1,3 +1,125 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <record id="troullides_homepage" model="website.page">
+        <field name="name">Home</field>
+        <field name="url">/</field>
+        <field name="is_published">True</field>
+        <field name="key">troullides_website.troullides_homepage</field>
+        <field name="arch" type="xml">
+            <t t-call="website.layout">
+                <div id="wrap">
+
+                    <section class="tr-hero">
+                        <div class="tr-hero-overlay">
+                            <h1>Quality Furniture for Every Home &amp; Business</h1>
+                            <p>Bedroom • Bathroom • Desk • Housekeeping • Wardrobes • Televisions</p>
+                            <div class="tr-hero-buttons">
+                                <a href="/shop" class="btn btn-tr-primary">Browse Products</a>
+                                <a href="/contactus" class="btn btn-tr-secondary">Contact Us</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="tr-section">
+                        <div class="container">
+                            <div class="tr-section-heading">
+                                <span>Our Collection</span>
+                                <h2>Shop by Category</h2>
+                            </div>
+
+                            <div class="tr-category-grid">
+                                <a href="/shop?search=Bedroom" class="tr-category-card">
+                                    <div>
+                                        <h3>Bedroom</h3>
+                                        <p>Explore bedroom furniture</p>
+                                    </div>
+                                </a>
+
+                                <a href="/shop?search=Bathroom" class="tr-category-card">
+                                    <div>
+                                        <h3>Bathroom</h3>
+                                        <p>Bathroom furniture and accessories</p>
+                                    </div>
+                                </a>
+
+                                <a href="/shop?search=Desk" class="tr-category-card">
+                                    <div>
+                                        <h3>Desk</h3>
+                                        <p>Office and desk solutions</p>
+                                    </div>
+                                </a>
+
+                                <a href="/shop?search=Wardrobe" class="tr-category-card">
+                                    <div>
+                                        <h3>Wardrobes</h3>
+                                        <p>Storage for every space</p>
+                                    </div>
+                                </a>
+
+                                <a href="/shop?search=Television" class="tr-category-card">
+                                    <div>
+                                        <h3>Televisions</h3>
+                                        <p>TV units and media furniture</p>
+                                    </div>
+                                </a>
+
+                                <a href="/shop?search=Housekeeping" class="tr-category-card">
+                                    <div>
+                                        <h3>Housekeeping</h3>
+                                        <p>Professional hospitality supplies</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="tr-section tr-light">
+                        <div class="container">
+                            <div class="tr-section-heading">
+                                <span>Why Troullides</span>
+                                <h2>Trusted Furniture &amp; Hospitality Supplier</h2>
+                            </div>
+
+                            <div class="tr-benefits">
+                                <div class="tr-benefit">
+                                    <h3>Quality Products</h3>
+                                    <p>Carefully selected products for homes, hotels, apartments and businesses.</p>
+                                </div>
+                                <div class="tr-benefit">
+                                    <h3>Cyprus Service</h3>
+                                    <p>Reliable service and support for customers across Cyprus.</p>
+                                </div>
+                                <div class="tr-benefit">
+                                    <h3>Professional Advice</h3>
+                                    <p>Our team helps you choose the right products for your space.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="tr-featured">
+                        <div class="container">
+                            <div class="tr-featured-content">
+                                <h2>Browse Our Product Catalogue</h2>
+                                <p>Discover our full range of furniture, hospitality supplies and home solutions.</p>
+                                <a href="/shop" class="btn btn-tr-primary">Go to Shop</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="tr-contact-banner">
+                        <div class="container">
+                            <h2>Need help choosing the right product?</h2>
+                            <p>Contact our team for advice, availability and quotations.</p>
+                            <div>
+                                <a href="tel:+35722488515" class="btn btn-tr-primary">+357 22488515</a>
+                                <a href="/contactus" class="btn btn-tr-secondary-dark">Contact Us</a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </field>
+    </record>
 </odoo>

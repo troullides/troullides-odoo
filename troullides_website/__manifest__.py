@@ -1,4 +1,7 @@
 {
+   "author": "Troullides",
+"website": "https://troullides.net",
+"license": "LGPL-3",
     "name": "Troullides Website",
     "version": "19.0.1.0.0",
     "category": "Website",
