@@ -1,22 +1,65 @@
 :root {
-  --tr-blue: #174f9a;
-  --tr-navy: #102033;
-  --tr-gold: #b89b5e;
-  --tr-light: #f5f7fa;
+    --tr-blue: #0D5AA7;
+    --tr-dark: #102033;
+    --tr-light: #F5F7FA;
+}
+
+.tr-hero {
+    min-height: 85vh;
+    background:
+        linear-gradient(rgba(16, 32, 51, 0.65), rgba(16, 32, 51, 0.65)),
+        url("/theme_troullides/static/src/img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tr-hero-overlay {
+    max-width: 1000px;
+    padding: 40px 20px;
+    color: white;
+}
+
+.tr-hero-logo {
+    max-width: 420px;
+    width: 80%;
+    margin-bottom: 35px;
+}
+
+.tr-hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.tr-hero p {
+    font-size: 1.4rem;
+    margin-bottom: 35px;
+}
+
+.tr-hero-buttons .btn {
+    margin: 8px;
+    padding: 14px 30px;
+    font-weight: 700;
 }
 
 .btn-primary {
-  background-color: var(--tr-blue) !important;
-  border-color: var(--tr-blue) !important;
-  font-weight: 600;
+    background-color: var(--tr-blue) !important;
+    border-color: var(--tr-blue) !important;
 }
 
-.btn-primary:hover {
-  background-color: var(--tr-navy) !important;
-  border-color: var(--tr-navy) !important;
-}
+@media (max-width: 768px) {
+    .tr-hero h1 {
+        font-size: 2.4rem;
+    }
 
-.tr-section-title {
-  color: var(--tr-navy);
-  font-weight: 700;
+    .tr-hero p {
+        font-size: 1.1rem;
+    }
+    body {
+    background-color: #f5f7fa !important;
+}
 }
