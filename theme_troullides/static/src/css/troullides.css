@@ -1,78 +1,17 @@
 /* ==========================
-   TROULLIDES HERO
+   TROULLIDES BRAND
 ========================== */
 
-.tr-hero {
-    position: relative;
-    height: 650px;
-    background: url('/theme_troullides/static/src/img/hero.jpg') center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
+:root {
+    --tr-blue: #0055A4;
+    --tr-blue-dark: #003f7d;
+    --tr-navy: #1A2433;
+    --tr-light: #F7F8FA;
+    --tr-white: #FFFFFF;
 }
 
-.tr-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,.45);
-}
-
-.tr-hero-overlay {
-    position: relative;
-    z-index: 2;
-    color: white;
-    max-width: 1100px;
-    padding: 20px;
-}
-
-.tr-hero h1 {
-    font-size: clamp(3rem,5vw,4.8rem);
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.tr-hero p {
-    font-size: 1.35rem;
-    margin-bottom: 35px;
-    opacity: .95;
-}
-
-.tr-hero-buttons .btn {
-    margin: 8px;
-    padding: 14px 34px;
-    border-radius: 10px;
-    font-weight: 600;
-    transition: .3s;
-}
-
-.btn-tr-primary {
-    background: #0055A4;
-    color: white;
-    border: none;
-}
-
-.btn-tr-primary:hover {
-    background: #003f7d;
-    color: white;
-}
-
-.btn-tr-secondary {
-    border: 2px solid white;
-    color: white;
-    background: transparent;
-}
-
-.btn-tr-secondary:hover {
-    background: white;
-    color: #0055A4;
-}
 /* ==========================
-   TROULLIDES HEADER
+   HEADER
 ========================== */
 
 #top {
@@ -84,29 +23,167 @@
 }
 
 #top .navbar {
-    min-height: 86px;
+    min-height: 82px;
 }
 
 #top .navbar-brand img {
-    max-height: 58px !important;
+    max-height: 64px !important;
     width: auto !important;
 }
 
 #top .nav-link {
     font-weight: 600;
-    color: #1A2433 !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    color: var(--tr-navy) !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
 }
 
 #top .nav-link:hover,
 #top .nav-link.active {
-    color: #0055A4 !important;
+    color: var(--tr-blue) !important;
 }
 
-#top .btn-primary {
-    background-color: #0055A4 !important;
-    border-color: #0055A4 !important;
+#top .btn-primary,
+#top .btn-secondary {
+    background-color: var(--tr-blue) !important;
+    border-color: var(--tr-blue) !important;
+    color: #fff !important;
     border-radius: 10px;
     font-weight: 700;
+}
+
+#top .btn-primary:hover,
+#top .btn-secondary:hover {
+    background-color: var(--tr-blue-dark) !important;
+    border-color: var(--tr-blue-dark) !important;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.tr-hero {
+    position: relative;
+    height: 700px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+        url("/theme_troullides/static/src/img/hero.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tr-hero-overlay {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    color: white;
+}
+
+.tr-hero-logo {
+    max-width: 380px;
+    width: 70%;
+    margin-bottom: 28px;
+}
+
+.tr-hero h1 {
+    font-size: clamp(2.8rem, 4vw, 4.2rem);
+    font-weight: 800;
+    line-height: 1.08;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.tr-hero p {
+    font-size: 1.35rem;
+    margin-bottom: 34px;
+    color: white;
+    opacity: 0.95;
+}
+
+.tr-hero-buttons .btn {
+    margin: 8px;
+    padding: 14px 34px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.25s ease;
+}
+
+.btn-tr-primary {
+    background: var(--tr-blue);
+    color: white !important;
+    border: 2px solid var(--tr-blue);
+}
+
+.btn-tr-primary:hover {
+    background: var(--tr-blue-dark);
+    border-color: var(--tr-blue-dark);
+    color: white !important;
+}
+
+.btn-tr-secondary {
+    background: transparent;
+    color: white !important;
+    border: 2px solid white;
+}
+
+.btn-tr-secondary:hover {
+    background: white;
+    color: var(--tr-blue) !important;
+}
+
+/* ==========================
+   GENERAL PAGE
+========================== */
+
+body {
+    background-color: var(--tr-light);
+}
+
+#wrap {
+    background-color: #fff;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+    #top .navbar {
+        min-height: 70px;
+    }
+
+    #top .navbar-brand img {
+        max-height: 48px !important;
+    }
+
+    .tr-hero {
+        height: 620px;
+        background-position: center center;
+    }
+
+    .tr-hero-logo {
+        max-width: 280px;
+    }
+
+    .tr-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .tr-hero p {
+        font-size: 1.05rem;
+    }
+
+    .tr-hero-buttons .btn {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        margin: 10px auto;
+    }
 }
