@@ -1,65 +1,73 @@
-:root {
-    --tr-blue: #0D5AA7;
-    --tr-dark: #102033;
-    --tr-light: #F5F7FA;
-}
+/* ==========================
+   TROULLIDES HERO
+========================== */
 
 .tr-hero {
-    min-height: 85vh;
-    background:
-        linear-gradient(rgba(16, 32, 51, 0.65), rgba(16, 32, 51, 0.65)),
-        url("/theme_troullides/static/src/img/hero.jpg");
+    position: relative;
+    height: 650px;
+    background: url('/theme_troullides/static/src/img/hero.jpg') center center;
     background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
+}
+
+.tr-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
 }
 
 .tr-hero-overlay {
-    max-width: 1000px;
-    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
     color: white;
-}
-
-.tr-hero-logo {
-    max-width: 420px;
-    width: 80%;
-    margin-bottom: 35px;
+    max-width: 1100px;
+    padding: 20px;
 }
 
 .tr-hero h1 {
-    font-size: 4rem;
-    font-weight: 800;
+    font-size: clamp(3rem,5vw,4.8rem);
+    font-weight: 700;
+    line-height: 1.1;
     margin-bottom: 20px;
 }
 
 .tr-hero p {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     margin-bottom: 35px;
+    opacity: .95;
 }
 
 .tr-hero-buttons .btn {
     margin: 8px;
-    padding: 14px 30px;
-    font-weight: 700;
+    padding: 14px 34px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .3s;
 }
 
-.btn-primary {
-    background-color: var(--tr-blue) !important;
-    border-color: var(--tr-blue) !important;
+.btn-tr-primary {
+    background: #0055A4;
+    color: white;
+    border: none;
 }
 
-@media (max-width: 768px) {
-    .tr-hero h1 {
-        font-size: 2.4rem;
-    }
-
-    .tr-hero p {
-        font-size: 1.1rem;
-    }
-    body {
-    background-color: #f5f7fa !important;
+.btn-tr-primary:hover {
+    background: #003f7d;
+    color: white;
 }
+
+.btn-tr-secondary {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+
+.btn-tr-secondary:hover {
+    background: white;
+    color: #0055A4;
 }

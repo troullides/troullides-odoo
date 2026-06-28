@@ -16,8 +16,8 @@
                             <h1>Quality Furniture for Every Home &amp; Business</h1>
                             <p>Bedroom • Bathroom • Desk • Housekeeping • Wardrobes • Televisions</p>
                             <div class="tr-hero-buttons">
-                                <a href="/shop" class="btn btn-primary btn-lg">Browse Products</a>
-                                <a href="/contactus" class="btn btn-outline-light btn-lg">Contact Us</a>
+                                <a href="/shop" class="btn btn-tr-primary">Browse Products</a>
+                               <a href="/contactus" class="btn btn-tr-secondary">Contact Us</a>
                             </div>
                         </div>
                     </section>
