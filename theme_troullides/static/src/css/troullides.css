@@ -71,3 +71,42 @@
     background: white;
     color: #0055A4;
 }
+/* ==========================
+   TROULLIDES HEADER
+========================== */
+
+#top {
+    background: #ffffff !important;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+#top .navbar {
+    min-height: 86px;
+}
+
+#top .navbar-brand img {
+    max-height: 58px !important;
+    width: auto !important;
+}
+
+#top .nav-link {
+    font-weight: 600;
+    color: #1A2433 !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+#top .nav-link:hover,
+#top .nav-link.active {
+    color: #0055A4 !important;
+}
+
+#top .btn-primary {
+    background-color: #0055A4 !important;
+    border-color: #0055A4 !important;
+    border-radius: 10px;
+    font-weight: 700;
+}
