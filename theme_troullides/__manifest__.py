@@ -1,23 +1,20 @@
 {
-    "name": "Troullides Website Theme",
+    "name": "Troullides Website",
     "version": "19.0.1.0.0",
-    "category": "Website",
-    "summary": "Troullides custom website styling",
+    "category": "Theme",
+"author": "Troullides",
+"website": "https://troullides.net",
+"license": "LGPL-3",
+    "summary": "Custom Troullides website pages",
     "depends": [
         "website",
         "website_sale",
+        "theme_troullides",
     ],
-
     "data": [
         "views/homepage.xml",
     ],
-
-    "assets": {
-        "web.assets_frontend": [
-            "theme_troullides/static/src/css/troullides.css",
-        ],
-    },
-
     "installable": True,
     "application": False,
+    "license": "LGPL-3",
 }
